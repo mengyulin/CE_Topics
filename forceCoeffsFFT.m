@@ -43,7 +43,7 @@ axis([0 1 0 0.5])
 %
 % ... Evaluate the frequency and the preiod of lift force ...
 %
-[Max_C,Max_I] = max(amp2);
+[Max_C,Max_I] = max(amp2(1:n-10));
 Fq = f(Max_I);
 Period = 1/Fq;
 fprintf('The frequency of the oscillation of lift is %f\n', Fq);
